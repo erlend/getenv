@@ -1,13 +1,17 @@
 # Getenv
 
+[![Build
+Status](https://travis-ci.org/erlend/getenv.svg?branch=master)](https://travis-ci.org/erlend/getenv)
+[![Gem](https://img.shields.io/gem/v/getenv.svg)](https://rubygems.org/gems/getenv)
+
 A tiny gem for getting environment variables.
 
 ```ruby
 Getenv.HOME  #=> "/Users/erlend"
 Getenv.HOME? #=> true
 Getenv.NOTHING? #=> false
-Getenv.custom_variable = "foo" #=> "foo"
-Getenv.custom_variable! #=> "en_US.UTF-8"
+Getenv.custom_variable = "foo"
+Getenv.custom_variable! #=> "foo"
 Getenv.no_variable! #=> raises Getenv::Error (key not found `no_variable`)
 ```
 
@@ -39,6 +43,7 @@ Getenv.LANG #=> "en_US.UTF-8"
 ###  Setting a variable
 
 ```ruby
+Getenv.LANG                 #=> "en_US.UTF-8"
 Getenv.LANG = "nb_NO.UTF-8" #=> "nb_NO.UTF-8"
 Getenv.LANG                 #=> "nb_NO.UTF-8"
 ```
