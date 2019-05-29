@@ -26,7 +26,7 @@ module Getenv
     def method_missing(meth, value = nil)
       key = meth.to_s
       suffix = key[-1]
-      key.delete_suffix!(suffix) if %w[? = !].include?(suffix)
+      key = key[0..-2] if %w[? = !].include?(suffix)
 
       case suffix
       when '?' then ENV.key?(key)
