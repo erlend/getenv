@@ -14,7 +14,7 @@ GEM
     parser (2.6.3.0)
       ast (~> 2.4.0)
     rainbow (3.0.0)
-    rake (10.5.0)
+    rake (12.3.3)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
       rspec-expectations (~> 3.8.0)
@@ -45,7 +45,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   getenv!
-  rake (~> 10.0)
+  rake (~> 12.3)
   rspec (~> 3.0)
   rubocop (~> 0.70)
 
